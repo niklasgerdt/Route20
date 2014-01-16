@@ -1,6 +1,8 @@
-DEBS
-====
-Distributed Event-Based Systems
+DEBS - Distributed Event-Based Systems
+-------------------------------
+Applications
+- scenarios
+- features
 
 Rationale for debs
 - Client/Server paradigm
@@ -8,6 +10,8 @@ Rationale for debs
 - scalability
 - adaptivity
 
+Building blocks
+---------------
 Event
 * Header & Payload
 * Type (Object, Tuple, Structural record, Semi-structural record)
@@ -16,10 +20,13 @@ Producer
 
 Consumer
 
+Notification service
+
 Routing
 * Filtering
 * Content based
 * Topic based
+* Channel
 
 Messaging Middleware
 - jms
@@ -34,7 +41,8 @@ Event-Based
 - SIENA
 - Kinesis
 
-Distributed
+Distributed issues
+------------------
 - Temporal
 - Consensus
 - Paxos
