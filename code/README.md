@@ -7,3 +7,7 @@ Possible issues:
 - eclipse is not using java 8 as jdk
 - eclipse is using embedded maven
 - using maven inside eclipse messes eclipse project, so favor command line
+
+Possiblesolutions
+- disable maven nature from the eclipse project
+- run mvn eclipse:eclipse from the command line when eclipse is running
