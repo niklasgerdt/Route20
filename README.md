@@ -1,4 +1,4 @@
-![Route20](/route20.jpg)
+![Route20](/route20_small.jpg)
 Route20 - Event-Based Router
 ----------------------------------------
 Key features:
