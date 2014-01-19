@@ -1,5 +1,5 @@
-![Route20](/route20_small.jpg)
-Route20 - Event-Based Routing System
+#Route![Route20](/route20_verysmall.jpg)
+Event-Based Distributed Routing System
 ----------------------------------------
 Key features:
 * Highly available
