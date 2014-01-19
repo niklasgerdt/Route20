@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.*;
 
-public class RouterTest {
+public class BlockingRouterTest {
 	private Router<String> router = new BlockingRouter<>();
 	private boolean subCalled = false;
 
