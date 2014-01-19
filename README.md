@@ -1,7 +1,8 @@
-Route20 - Distributed Event-Based Routing System
-------------------------------------------------
+![Route20](/route20.jpg)
+Route20 - Event-Based Router
+----------------------------------------
 Key features:
-* Highly availabe
+* Highly available
 * Support for local and distributed systems
 * Fast
 * Fault tolerant
