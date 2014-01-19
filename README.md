@@ -1,4 +1,4 @@
-#Route![Route20](/route20_verysmall.jpg)
+#Route![Route20](/40px-US_20.svg.png)
 Event-Based Distributed Routing System
 ----------------------------------------
 Key features:
