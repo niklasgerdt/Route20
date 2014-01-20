@@ -1,11 +1,13 @@
 package route20.local;
 
-import java.util.Collections;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class R20 {
 	private final static Map<String, Router<?>> routers = new TreeMap<>();
+
+	public static <E> void newBlockingRouter() {
+
+	}
 
 	/**
 	 * Creates a singleton BlockingRouter with event type <E>. Router can be
@@ -45,8 +47,7 @@ public class R20 {
 	 * @param name
 	 *            of the router
 	 */
-	public static <E> void createNamedFastRouter(String name,
-			int eventRoutingThreads) {
+	public static <E> void createNamedFastRouter(String name, int eventRoutingThreads) {
 		if (!routers.containsKey(name)) {
 			routers.put(name, new NonBlockingRouter<E>(2));
 		}
@@ -57,8 +58,7 @@ public class R20 {
 	}
 
 	@SuppressWarnings("unchecked")
-	public static <E> Router<E> router(String name)
-			throws UnknownRouterException {
+	public static <E> Router<E> router(String name) throws UnknownRouterException {
 		if (routers.containsKey(name))
 			return (Router<E>) routers.get(name);
 		throw new UnknownRouterException("Unknown router " + name);
