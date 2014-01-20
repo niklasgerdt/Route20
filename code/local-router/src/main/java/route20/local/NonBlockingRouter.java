@@ -28,10 +28,14 @@ public class NonBlockingRouter<E> implements Router<E> {
 				while (true) {
 					E e = eventQ.take();
 					synchronized (subs) {
-						for (Subscriber<E> s : subs)
-							s.onEvent(e);
+						routeEvent(e);
 					}
 				}
+			}
+
+			private void routeEvent(E e) {
+				for (Subscriber<E> s : subs)
+					s.onEvent(e);
 			}
 		}).start();
 	}
