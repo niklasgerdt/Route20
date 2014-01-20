@@ -1,40 +1,44 @@
 package route20.local;
 
 import java.util.*;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 public class NonBlockingRouter<E> implements Router<E> {
+	private static final int CAPACITY = 1000 * 1000;
 	private List<Subscriber<E>> subs = new ArrayList<>();
-	private List<E> eventQ = new ArrayList<>();
-	private String eventQueueLock = "eventQueueLock";
+	private BlockingQueue<E> eventQ = new ArrayBlockingQueue<>(CAPACITY);
 
 	public NonBlockingRouter(int eventQueueRouterThreads) {
-		while (eventQueueRouterThreads > 0)
-			new Thread(new Runnable() {
-				public void run() {
-					while (true) {
-						synchronized (eventQ) {
-							try {
-								eventQ.wait();
-							} catch (InterruptedException e1) {
-								e1.printStackTrace();
-							}
-							E e = eventQ.remove(0);
-							synchronized (subs) {
-								for (Subscriber<E> s : subs)
-									s.onEvent(e);
-							}
-						}
+		while (eventQueueRouterThreads-- > 0)
+			runEventQueueThread();
+	}
+
+	private void runEventQueueThread() {
+		new Thread(new Runnable() {
+			public void run() {
+				try {
+					handleEvent();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+
+			private void handleEvent() throws InterruptedException {
+				while (true) {
+					E e = eventQ.take();
+					synchronized (subs) {
+						for (Subscriber<E> s : subs)
+							s.onEvent(e);
 					}
 				}
-			}).start();
+			}
+		}).start();
 	}
 
 	@Override
 	public void event(E event) {
-		synchronized (eventQ) {
-			eventQ.add(event);
-			eventQ.notify();
-		}
+		eventQ.add(event);
 	}
 
 	@Override
@@ -50,5 +54,4 @@ public class NonBlockingRouter<E> implements Router<E> {
 			subs.remove(sub);
 		}
 	}
-
 }
