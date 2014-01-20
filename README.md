@@ -10,5 +10,6 @@ Key features:
 * Fault tolerant
 * Traceable
 * Dynamic routing
+* Non-blocking
 
 Designed to run in a local JVM or as a distributed system on top of Amazon AWS.
