@@ -11,13 +11,22 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
 
+	<pluginRepositories>
+		<pluginRepository>
+			<id>maven.java.net</id>
+			<name>Java.net Maven2 Repository</name>
+			<url>http://download.java.net/maven/2</url>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -37,13 +46,26 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
+				<groupId>org.glassfish.maven.plugin</groupId>
+				<artifactId>maven-glassfish-plugin</artifactId>
+				<version>2.1</version>
 				<configuration>
-					<scanIntervalSeconds>10</scanIntervalSeconds>
-					<webApp>
-						<contextPath>/test</contextPath>
-					</webApp>
+					<glassfishDirectory>/home/niklas/dev/glassfish4</glassfishDirectory>
+<!-- 					<adminPassword>admin</adminPassword> -->
+					<passwordFile>domain</passwordFile>
+					<user>admin</user>
+					<autoCreate>true</autoCreate>
+					<debug>true</debug>
+					<echo>true</echo>
+					<terse>true</terse>
+					<domain>
+						<name>r20</name>
+						<adminPort>4048</adminPort>
+						<httpPort>4080</httpPort>
+						<httpsPort>4043</httpsPort>
+						<iiopPort>4037</iiopPort>
+						<reuse>false</reuse>
+					</domain>
 				</configuration>
 			</plugin>
 		</plugins>
