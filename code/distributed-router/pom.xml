@@ -7,8 +7,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<maven.compiler.source>1.7</maven.compiler.source>
-		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<pluginRepositories>
@@ -33,6 +33,13 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.9.5</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -51,7 +58,7 @@
 				<version>2.1</version>
 				<configuration>
 					<glassfishDirectory>/home/niklas/dev/glassfish4</glassfishDirectory>
-<!-- 					<adminPassword>admin</adminPassword> -->
+					<!-- <adminPassword>admin</adminPassword> -->
 					<passwordFile>domain</passwordFile>
 					<user>admin</user>
 					<autoCreate>true</autoCreate>
