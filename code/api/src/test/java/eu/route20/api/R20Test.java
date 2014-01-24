@@ -4,6 +4,8 @@ import org.junit.*;
 import org.mockito.*;
 import route20.local.*;
 
+//TODO nonblocking event type router
+//TODO topic based routing
 public class R20Test {
 	@Mock
 	private Subscriber<Double> sub;

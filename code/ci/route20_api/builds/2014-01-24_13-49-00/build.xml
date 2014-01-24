@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.maven.MavenModuleSetBuild plugin="maven-plugin@2.1">
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@2.0.1">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@1.6.1">
+              <sha1>7ab4c4f90704e34bd63ef29fcf1d34c7ff321ab8</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>6</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
+      <remoteUrls>
+        <string>https://github.com/niklasgerdt/Route20.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@2.0.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/niklas/.jenkins/jobs/route20_api/workspace</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <hudson.maven.reporters.SurefireAggregatedReport>
+      <descriptions class="concurrent-hash-map"/>
+      <failCount>0</failCount>
+      <skipCount>0</skipCount>
+      <totalCount>7</totalCount>
+      <children>
+        <hudson.tasks.test.AggregatedTestResultAction_-Child>
+          <name>Route20:api</name>
+          <build>6</build>
+        </hudson.tasks.test.AggregatedTestResultAction_-Child>
+      </children>
+    </hudson.maven.reporters.SurefireAggregatedReport>
+    <hudson.maven.reporters.MavenAggregatedArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+    </hudson.maven.reporters.MavenAggregatedArtifactRecord>
+    <hudson.plugins.sonar.BuildSonarAction plugin="sonar@2.1">
+      <url>http://localhost:9000/dashboard/index/Route20:api</url>
+    </hudson.plugins.sonar.BuildSonarAction>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>org.mockito:mockito-all-1.9.5.jar</string>
+          <string>50faa79d126d0213ab14ccb112a8b76d</string>
+        </entry>
+        <entry>
+          <string>Route20:api-0.0.1-SNAPSHOT.jar</string>
+          <string>563d8fcb01f535c2871f49d0ccba904e</string>
+        </entry>
+        <entry>
+          <string>Route20:local-router-0.0.1-SNAPSHOT.jar</string>
+          <string>83f50d983bd979397d416681865aae07</string>
+        </entry>
+        <entry>
+          <string>junit:junit-4.11.jar</string>
+          <string>3c42be5ea7cbf3635716abbb429cb90d</string>
+        </entry>
+        <entry>
+          <string>org.hamcrest:hamcrest-core-1.3.jar</string>
+          <string>6393363b47ddcbba82321110c3e07519</string>
+        </entry>
+        <entry>
+          <string>Route20:api:pom.xml</string>
+          <string>ac5ad9869692f44ee37bf4dabe678707</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+  </actions>
+  <number>6</number>
+  <startTime>1390564140956</startTime>
+  <result>SUCCESS</result>
+  <duration>22091</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/home/niklas/.jenkins/jobs/route20_api/workspace</workspace>
+  <hudsonVersion>1.548</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@2.0.1">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.RegularImmutableSortedSet">
+    <string>gerdtni</string>
+  </culprits>
+  <mavenVersionUsed>3.1.1</mavenVersionUsed>
+</hudson.maven.MavenModuleSetBuild>
