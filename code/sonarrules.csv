@@ -1,0 +1,142 @@
+title,key,plugin,priority,status
+"""enum"" should no longer be used as a name",S1190,squid,MAJOR,ACTIVE
+"""equals(Object obj)"" and ""hashCode()"" should be overridden in pairs",S1206,squid,BLOCKER,ACTIVE
+"""equals(Object obj)"" should be overridden along with the ""compareTo(T obj)"" method",S1210,squid,CRITICAL,ACTIVE
+"""java.lang.Error"" should not be extended",S1194,squid,MAJOR,ACTIVE
+"""object == null"" should be used instead of ""object.equals(null)""",S1318,squid,CRITICAL,ACTIVE
+"""switch"" statements should have at least 3 cases",S1301,squid,MINOR,ACTIVE
+"""switch"" statements should not contain non-case labels",S1219,squid,CRITICAL,ACTIVE
+Anonymous classes should not have too many lines,S1188,squid,MAJOR,ACTIVE
+"Array designators ""[]"" should be located after the type in method signatures",S1195,squid,MINOR,ACTIVE
+"Array designators ""[]"" should be on the type, not the variable",S1197,squid,MINOR,ACTIVE
+Assignments should not be made from within sub-expressions,AssignmentInSubExpressionCheck,squid,MAJOR,ACTIVE
+Avoid Array Loops,AvoidArrayLoops,pmd,MAJOR,ACTIVE
+Avoid Assert As Identifier,AvoidAssertAsIdentifier,pmd,MAJOR,ACTIVE
+Avoid Catching NPE,AvoidCatchingNPE,pmd,MAJOR,ACTIVE
+Avoid commented-out lines of code,CommentedOutCodeLine,squid,MAJOR,ACTIVE
+Avoid Decimal Literals In Big Decimal Constructor,AvoidDecimalLiteralsInBigDecimalConstructor,pmd,MAJOR,ACTIVE
+Avoid Throwing Null Pointer Exception,AvoidThrowingNullPointerException,pmd,MAJOR,ACTIVE
+Avoid too complex class,ClassCyclomaticComplexity,squid,MAJOR,ACTIVE
+Avoid too complex method,MethodCyclomaticComplexity,squid,MAJOR,ACTIVE
+Big Integer Instantiation,BigIntegerInstantiation,pmd,MAJOR,ACTIVE
+Boolean expressions should not be compared to true or false,S1125,squid,MAJOR,ACTIVE
+Boolean Instantiation,BooleanInstantiation,pmd,MAJOR,ACTIVE
+Broken Null Check,BrokenNullCheck,pmd,CRITICAL,ACTIVE
+Case insensitive string comparisons should be made without intermediate upper or lower casing,S1157,squid,MAJOR,ACTIVE
+Class Cast Exception With To Array,ClassCastExceptionWithToArray,pmd,MAJOR,ACTIVE
+Class names should comply with a naming convention,S00101,squid,MAJOR,ACTIVE
+Class variable fields should not have public accessibility,ClassVariableVisibilityCheck,squid,MAJOR,ACTIVE
+"Classes from ""com.sun.*"" and ""sun.*"" packages should not be used",S1191,squid,MAJOR,ACTIVE
+Close Resource,CloseResource,pmd,MAJOR,ACTIVE
+"Collapsible ""if"" statements should be merged",S1066,squid,MAJOR,ACTIVE
+Collection.isEmpty() should be used to test for emptiness,S1155,squid,MAJOR,ACTIVE
+Comments should not be located at the end of lines of code,TrailingCommentCheck,squid,MINOR,ACTIVE
+Compare Objects With Equals,CompareObjectsWithEquals,pmd,MAJOR,ACTIVE
+Constant names should comply with a naming convention,S00115,squid,MAJOR,ACTIVE
+"Constants should be declared ""final static"" rather than merely ""final""",S1170,squid,MAJOR,ACTIVE
+Constants should not be defined in interfaces,S1214,squid,MINOR,ACTIVE
+Constructor Calls Overridable Method,ConstructorCallsOverridableMethod,pmd,MAJOR,ACTIVE
+"Control flow statements ""if"", ""for"", ""while"" and ""switch"" should not be nested too deeply",S134,squid,MINOR,ACTIVE
+Deprecated code should be removed eventually,S1133,squid,INFO,ACTIVE
+Deprecated elements should have both the annotation and the Javadoc tag,MissingDeprecatedCheck,squid,MAJOR,ACTIVE
+Duplicated blocks,DuplicatedBlocks,common-java,MAJOR,ACTIVE
+Empty arrays and collections should be returned instead of null,S1168,squid,MAJOR,ACTIVE
+Empty Finalizer,EmptyFinalizer,pmd,MAJOR,ACTIVE
+Empty statements should be removed,EmptyStatementUsageCheck,squid,MAJOR,ACTIVE
+Enumeration should not be implemented,S1150,squid,MAJOR,ACTIVE
+Exception classes should be immutable,S1165,squid,MAJOR,ACTIVE
+Exception handlers should provide some context and preserve the original exception,S1166,squid,CRITICAL,ACTIVE
+"Exception types should not be tested using ""instanceof"" in catch blocks",S1193,squid,MAJOR,ACTIVE
+Exceptions should not be thrown in finally blocks,S1163,squid,MAJOR,ACTIVE
+Execution of the Garbage Collector should be triggered only by the JVM,S1215,squid,CRITICAL,ACTIVE
+Expressions should not be too complex,S1067,squid,MAJOR,ACTIVE
+Field names should comply with a naming convention,S00116,squid,MAJOR,ACTIVE
+FIXME tags should be handled,S1134,squid,MAJOR,ACTIVE
+"Generic exceptions Error, RuntimeException, Throwable and Exception should never be thrown",S00112,squid,MAJOR,ACTIVE
+Idempotent Operations,IdempotentOperations,pmd,MAJOR,ACTIVE
+"If statement conditions should not always evaluate to ""true"" or to ""false""",S1145,squid,MAJOR,ACTIVE
+if/else/for/while/do statements should always use curly braces,S00121,squid,INFO,ACTIVE
+Inefficient String Buffering,InefficientStringBuffering,pmd,MAJOR,ACTIVE
+Instantiation To Get Class,InstantiationToGetClass,pmd,MAJOR,ACTIVE
+Insufficient branch coverage by unit tests,InsufficientBranchCoverage,common-java,MAJOR,ACTIVE
+Integer Instantiation,IntegerInstantiation,pmd,MAJOR,ACTIVE
+Interface names should comply with a naming convention,S00114,squid,MAJOR,ACTIVE
+IP addresses should not be hardcoded,S1313,squid,MAJOR,ACTIVE
+"Java collection interfaces such as ""List"" should be hold instead of specific implementations classes such as ""LinkedList""",S1319,squid,MAJOR,ACTIVE
+Labels should not be used,LabelsShouldNotBeUsedCheck,squid,MAJOR,ACTIVE
+Left curly braces should be located at the end of lines of code,LeftCurlyBraceEndLineCheck,squid,MAJOR,ACTIVE
+Local variable and method parameter names should comply with a naming convention,S00117,squid,MAJOR,ACTIVE
+Local variables should not shadow class fields,HiddenFieldCheck,squid,MAJOR,ACTIVE
+"Loggers should be ""private static final"" and should share a naming convention",S1312,squid,MAJOR,ACTIVE
+"Long suffix ""L"" should be upper case",LowerCaseLongSuffixCheck,squid,MAJOR,ACTIVE
+Loop counters should not be assigned to from within the loop body,ForLoopCounterChangedCheck,squid,MAJOR,ACTIVE
+"Loops should not contain more than a single ""break"" or ""continue"" statement",S135,squid,MAJOR,ACTIVE
+Method names should comply with a naming convention,S00100,squid,MAJOR,ACTIVE
+"Method parameters, caught exceptions and foreach variables should not be reassigned",S1226,squid,MAJOR,ACTIVE
+"Methods named ""equals"" should override Object.equals(Object)",S1201,squid,CRITICAL,ACTIVE
+Methods should not be empty,S1186,squid,MAJOR,ACTIVE
+"Methods should not be named ""hashcode""",S1221,squid,CRITICAL,ACTIVE
+Methods should not have too many parameters,S00107,squid,MAJOR,ACTIVE
+Missing Static Method In Non Instantiatable Class,MissingStaticMethodInNonInstantiatableClass,pmd,MAJOR,ACTIVE
+Modifiers should be declared in the correct order,ModifiersOrderCheck,squid,MINOR,ACTIVE
+Ncss Type Count,NcssTypeCount,pmd,MAJOR,ACTIVE
+Nested blocks of code should not be left empty,S00108,squid,MAJOR,ACTIVE
+Nested code blocks should not be used,S1199,squid,MAJOR,ACTIVE
+Non-constructor methods should not have the same name as the enclosing class,S1223,squid,MAJOR,ACTIVE
+Non-static class initializers should not be used,S1171,squid,MAJOR,ACTIVE
+Object.finalize() should not be overloaded (by adding method parameters),S1175,squid,MAJOR,ACTIVE
+Object.finalize() should remain protected (versus public) when overriding,S1174,squid,MAJOR,ACTIVE
+Octal values should not be used,S1314,squid,MAJOR,ACTIVE
+Overriding methods should do more than simply call the same method in the super class,S1185,squid,MINOR,ACTIVE
+Package names should comply with a naming convention,S00120,squid,MAJOR,ACTIVE
+Primitive wrappers should not be instantiated only to perform a to String conversion,S1158,squid,MAJOR,ACTIVE
+Public methods should throw at most one checked exception,S1160,squid,MAJOR,ACTIVE
+Return of boolean expressions should not be wrapped into an if-then-else statement,S1126,squid,MAJOR,ACTIVE
+Return statements should not occur in finally blocks,S1143,squid,BLOCKER,ACTIVE
+"Right curly brace and next ""else"", ""catch"" and ""finally"" keywords should be located on the same line",RightCurlyBraceSameLineAsNextBlockCheck,squid,MAJOR,ACTIVE
+Right curly braces should be located at the beginning of lines of code,RightCurlyBraceStartLineCheck,squid,MAJOR,ACTIVE
+Security - Array is stored directly,ArrayIsStoredDirectly,pmd,CRITICAL,ACTIVE
+Simplify Conditional,SimplifyConditional,pmd,MAJOR,ACTIVE
+Singular Field,SingularField,pmd,MINOR,ACTIVE
+Statements should be on separate lines,S00122,squid,MAJOR,ACTIVE
+String Buffer Instantiation With Char,StringBufferInstantiationWithChar,pmd,MAJOR,ACTIVE
+String Instantiation,StringInstantiation,pmd,MAJOR,ACTIVE
+String literals should not be duplicated,S1192,squid,MINOR,ACTIVE
+String To String,StringToString,pmd,MAJOR,ACTIVE
+String.valueOf() should not be appended to a String,S1153,squid,MINOR,ACTIVE
+Strings literals should be placed on the left side when checking for equality,S1132,squid,MAJOR,ACTIVE
+Strings should be compared using equals(),StringEqualityComparisonCheck,squid,MAJOR,ACTIVE
+super.clone() should be called when overriding Object.clone(),S1182,squid,MAJOR,ACTIVE
+super.finalize() should be called at the end of Object.finalize() implementations,ObjectFinalizeOverridenCallsSuperFinalizeCheck,squid,BLOCKER,ACTIVE
+Switch cases should end with an unconditional break statement,S128,squid,CRITICAL,ACTIVE
+Switch cases should not have too many lines,S1151,squid,MAJOR,ACTIVE
+Switch statements should end with a default case,SwitchLastCaseIsDefaultCheck,squid,MAJOR,ACTIVE
+"Synchronized classes Vector, Hashtable and StringBuffer should not be used",S1149,squid,MAJOR,ACTIVE
+System.exit(...) and Runtime.getRuntime().exit(...) should not be called,S1147,squid,CRITICAL,ACTIVE
+System.out and System.err should not be used as loggers,S106,squid,MAJOR,ACTIVE
+Tabulation characters should not be used,S00105,squid,MINOR,ACTIVE
+The default unnamed package should not be used,S1220,squid,MAJOR,ACTIVE
+The members of an interface declaration or class should appear in a pre-defined order,S1231,squid,MINOR,ACTIVE
+The Object.finalize() method should never be called,ObjectFinalizeCheck,squid,CRITICAL,ACTIVE
+The Object.finalize() method should never be overriden,ObjectFinalizeOverridenCheck,squid,CRITICAL,ACTIVE
+Thread.run() and Runnable.run() should not be called directly,S1217,squid,CRITICAL,ACTIVE
+Throwable and Error classes should not be caught,S1181,squid,BLOCKER,ACTIVE
+Throwable.printStackTrace(...) should never be called,S1148,squid,CRITICAL,ACTIVE
+Throws declarations should not be redundant,RedundantThrowsDeclarationCheck,squid,MINOR,ACTIVE
+TODO tags should be handled,S1135,squid,INFO,ACTIVE
+Try-catch blocks should not be nested,S1141,squid,MAJOR,ACTIVE
+Type parameter names should comply with a naming convention,S00119,squid,MAJOR,ACTIVE
+Unnecessary Local Before Return,UnnecessaryLocalBeforeReturn,pmd,MAJOR,ACTIVE
+Unused formal parameter,UnusedFormalParameter,pmd,MAJOR,ACTIVE
+Unused local variable,UnusedLocalVariable,pmd,MAJOR,ACTIVE
+Unused Modifier,UnusedModifier,pmd,INFO,ACTIVE
+Unused Null Check In Equals,UnusedNullCheckInEquals,pmd,MAJOR,ACTIVE
+Unused Private Field,UnusedPrivateField,pmd,MAJOR,ACTIVE
+Unused private method,UnusedPrivateMethod,squid,MAJOR,ACTIVE
+Use Arrays As List,UseArraysAsList,pmd,MAJOR,ACTIVE
+Use Index Of Char,UseIndexOfChar,pmd,MAJOR,ACTIVE
+Use String Buffer Length,UseStringBufferLength,pmd,MINOR,ACTIVE
+Useless imports should be removed,UselessImportCheck,squid,MINOR,ACTIVE
+Useless Operation On Immutable,UselessOperationOnImmutable,pmd,CRITICAL,ACTIVE
+Useless parentheses around expressions should be removed to prevent any misunderstanding,UselessParenthesesCheck,squid,MAJOR,ACTIVE
+Utility classes should not have a public constructor,S1118,squid,MAJOR,ACTIVE

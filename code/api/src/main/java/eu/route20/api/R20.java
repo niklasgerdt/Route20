@@ -3,8 +3,11 @@ package eu.route20.api;
 import java.util.*;
 import route20.local.*;
 
-public class R20 {
-	private final static Map<Class<? extends Object>, Router<?>> routers = new HashMap<>();
+public final class R20 {
+	private static final Map<Class<? extends Object>, Router<?>> ROUTERS = new HashMap<>();
+
+	private R20() {
+	}
 
 	/**
 	 * Creates a singleton {@link BlockingRouter} with event type <E>. Only one
@@ -18,9 +21,9 @@ public class R20 {
 	 */
 	public static <E> void initBlockingRouter(Class<E> eventType) {
 		final Class<E> e = Objects.requireNonNull(eventType);
-		synchronized (routers) {
-			if (!routers.containsKey(e))
-				routers.put(e, new BlockingRouter<E>());
+		synchronized (ROUTERS) {
+			if (!ROUTERS.containsKey(e))
+				ROUTERS.put(e, new BlockingRouter<E>());
 		}
 	}
 
@@ -40,11 +43,11 @@ public class R20 {
 	public static <E> void registerToEventType(Class<E> eventType, Subscriber<E> subscriber) {
 		final Class<E> e = Objects.requireNonNull(eventType);
 		final Subscriber<E> sub = Objects.requireNonNull(subscriber);
-		synchronized (routers) {
-			if (!routers.containsKey(e))
+		synchronized (ROUTERS) {
+			if (!ROUTERS.containsKey(e))
 				throw new RouterNotInitializedException();
 			@SuppressWarnings("unchecked")
-			Router<E> r = (Router<E>) routers.get(e);
+			Router<E> r = (Router<E>) ROUTERS.get(e);
 			r.register(sub);
 		}
 	}
@@ -59,9 +62,9 @@ public class R20 {
 	 */
 	public static <E> void fire(E event) {
 		final E e = Objects.requireNonNull(event);
-		synchronized (routers) {
+		synchronized (ROUTERS) {
 			@SuppressWarnings("unchecked")
-			Router<E> r = (Router<E>) routers.get(e.getClass());
+			Router<E> r = (Router<E>) ROUTERS.get(e.getClass());
 			r.event(e);
 		}
 	}
@@ -70,8 +73,8 @@ public class R20 {
 	 * Flushes all routers for all event types
 	 */
 	public static void flushRouters() {
-		synchronized (routers) {
-			routers.clear();
+		synchronized (ROUTERS) {
+			ROUTERS.clear();
 		}
 	}
 }

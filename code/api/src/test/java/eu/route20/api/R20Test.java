@@ -61,4 +61,14 @@ public class R20Test {
 		Mockito.verify(sub).onEvent(e);
 		Mockito.verify(subAlt).onEvent(e);
 	}
+
+	@Test
+	public void subsequentEventTypedRoutersNotCreated() {
+		R20.initBlockingRouter(Double.class);
+		R20.registerToEventType(Double.class, sub);
+		R20.initBlockingRouter(Double.class);
+		Double e = Double.valueOf(250.0);
+		R20.fire(e);
+		Mockito.verify(sub).onEvent(e);
+	}
 }

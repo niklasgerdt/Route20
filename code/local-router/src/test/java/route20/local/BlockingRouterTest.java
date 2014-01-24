@@ -12,6 +12,7 @@ public class BlockingRouterTest {
 	public void setup() {
 		subCalled = false;
 	}
+	
 
 	@Test
 	public void registeredSubsAreInvokedOnEvent() {
