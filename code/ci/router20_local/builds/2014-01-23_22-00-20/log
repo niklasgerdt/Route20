@@ -1,0 +1,11 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /home/niklas/.jenkins/jobs/router20_local/workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/niklasgerdt/Route20.git
+Fetching upstream changes from https://github.com/niklasgerdt/Route20.git
+Fetching upstream changes from https://github.com/niklasgerdt/Route20.git
+Seen branch in repository origin/master
+Seen 1 remote branch
+Checking out Revision 240d1118a377906650eabd5ab8e1c6e272a37d3a (origin/master)
+ERROR: Maven Home /home/niklas/dev/apache-maven-3.1.0 doesn’t exist
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mFinished: FAILURE

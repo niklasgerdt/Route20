@@ -1,0 +1,12 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /home/niklas/.jenkins/jobs/router20_local/workspace
+Fetching changes from the remote Git repository
+Fetching upstream changes from https://github.com/niklasgerdt/Route20.git
+Seen branch in repository origin/master
+Seen 1 remote branch
+Checking out Revision f7ed1b62f10110fd3f625f5669c6ddebb34c84d4 (origin/master)
+Parsing POMs
+ERROR: No such file /home/niklas/.jenkins/jobs/router20_local/workspace/code/local-router/pom.xml
+Perhaps you need to specify the correct POM file path in the project configuration?
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mSkipping sonar analysis due to bad build status FAILURE
+Finished: FAILURE
