@@ -1,8 +1,8 @@
-package route20.local;
+package eu.route20.local;
 
 import static org.junit.Assert.*;
-
 import org.junit.*;
+import eu.route20.local.*;
 
 public class BlockingRouterTest {
 	private Router<String> router = new BlockingRouter<>();

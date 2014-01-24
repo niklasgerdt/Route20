@@ -1,4 +1,4 @@
-package route20.local;
+package eu.route20.local;
 
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;

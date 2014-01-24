@@ -1,4 +1,4 @@
-package route20.local;
+package eu.route20.local;
 
 @SuppressWarnings("serial")
 public class UnknownRouterException extends RuntimeException {
