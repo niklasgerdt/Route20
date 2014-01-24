@@ -1,9 +1,0 @@
-commit 8bb4e5b5dbfb0edf800edcd623fe5b287a6c5cc4
-tree 2601863053475d12b0eed03f0ca0ed5f16b08491
-parent 95afa6704bbe5afa371357f598c0a87a7eccc902
-author Niklas Gerdt <gernikla@gmail.com> 1390567334 +0200
-committer Niklas Gerdt <gernikla@gmail.com> 1390567334 +0200
-
-    to java 7
-
-:100644 100644 f3f06f6a6e4627583883642c128a683307379de8 764565c771c2a894184b6a75640b8fedd7622cb1 M	code/README.md
