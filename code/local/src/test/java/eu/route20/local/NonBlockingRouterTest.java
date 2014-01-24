@@ -2,7 +2,6 @@ package eu.route20.local;
 
 import static org.junit.Assert.*;
 import org.junit.*;
-import eu.route20.local.*;
 
 public class NonBlockingRouterTest {
 	private Router<String> router = new NonBlockingRouter<>(10);
@@ -16,8 +15,7 @@ public class NonBlockingRouterTest {
 	}
 
 	@Test
-	public void controlReturnsImmediatelyAfterCall()
-			throws InterruptedException {
+	public void controlReturnsImmediatelyAfterCall() throws InterruptedException {
 		Subscriber<String> s = new SlowSub<>();
 		router.register(s);
 		router.event("event");

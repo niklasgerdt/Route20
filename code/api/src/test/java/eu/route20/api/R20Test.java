@@ -2,7 +2,7 @@ package eu.route20.api;
 
 import org.junit.*;
 import org.mockito.*;
-import route20.local.*;
+import eu.route20.local.*;
 
 //TODO nonblocking event type router
 //TODO topic based routing

@@ -1,7 +1,7 @@
 package eu.route20.api;
 
 import java.util.*;
-import route20.local.*;
+import eu.route20.local.*;
 
 /**
  * Utility class for routers and subscribers. Abstracts the use of event routing

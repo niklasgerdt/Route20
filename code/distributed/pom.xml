@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>Route20</groupId>
-	<artifactId>distributed-router</artifactId>
+	<artifactId>distributed</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
