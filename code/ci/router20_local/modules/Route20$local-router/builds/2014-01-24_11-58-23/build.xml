@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<hudson.maven.MavenBuild plugin="maven-plugin@2.1">
-  <number>10</number>
-  <startTime>0</startTime>
-  <duration>0</duration>
-  <keepLog>false</keepLog>
-  <builtOn></builtOn>
-  <workspace>/home/niklas/.jenkins/jobs/router20_local/workspace/code/local-router</workspace>
-</hudson.maven.MavenBuild>
