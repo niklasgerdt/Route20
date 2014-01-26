@@ -4,5 +4,5 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.*;
 
 @ApplicationPath("/r20")
-public class RestService extends Application {
+public class Service extends Application {
 }

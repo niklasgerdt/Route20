@@ -1,8 +1,8 @@
-package eu.route20.distributed;
+package eu.route20.examples.restsubscriber;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;
 
-@ApplicationPath("/r20")
+@ApplicationPath("/sub")
 public class RestService extends Application {
 }

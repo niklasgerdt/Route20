@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>Route20</groupId>
-	<artifactId>routes</artifactId>
+	<artifactId>examples</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
@@ -11,8 +11,7 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
 
-<dependencies>
-
+	<dependencies>
 		<!-- REST WEB-SERVICE -->
 		<!-- Use this dependency for glassfish 4 -->
 		<!-- <dependency> -->
@@ -44,6 +43,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>examples</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
