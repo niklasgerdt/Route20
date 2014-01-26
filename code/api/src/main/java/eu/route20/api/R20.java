@@ -4,19 +4,19 @@ import java.util.*;
 import eu.route20.local.*;
 
 /**
- * Utility class for routers and subscribers. Abstracts the use of event routing
- * to simple method calls on this class.
- * 
- * Creating routes and subscribers example.
- * 
- * <pre class="code">
- * <code class="java>
- * public void
- * configureMyApplication() R20.initBlockingRouter(Double.class);
- * R20.registerToEventType(Double.class, sub); }
- * </code>
- * </pre>
- * 
+ * Utility methods for {@link Router} and {@link Subscriber}. This class let's
+ * you create different kinds of routers by type or topic. Register
+ * {@link Subscriber} to appropriate {@link Router}. Provides event publishing
+ * to created routes. <br>
+ * <br>
+ * Classification of supported methods:
+ * <ul>
+ * <li>Methods that create {@link Router} by type.
+ * <li>Methods that create {@link Router} by topic.
+ * <li>Methods that register {@link Subscriber} to appropriate {@link Router}.
+ * <li>Methods that publish events to appropriate {@link Router}.
+ * <li>Methods that terminates created {@link Router}.
+ * </ul>
  */
 public final class R20 {
 	private static final Map<Class<? extends Object>, Router<?>> ROUTERS = new HashMap<>();
