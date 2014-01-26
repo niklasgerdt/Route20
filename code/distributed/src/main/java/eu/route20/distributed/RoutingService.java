@@ -2,10 +2,12 @@ package eu.route20.distributed;
 
 import java.io.*;
 import javax.servlet.*;
+import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
 //TODO java ee 7 rest
 @SuppressWarnings("serial")
+@WebServlet({ "/route", "/r20" })
 public class RoutingService extends HttpServlet {
 
 	@Override

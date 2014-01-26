@@ -26,6 +26,22 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<!-- REST WEB-SERVICE -->
+		<!-- Use this dependency for glassfish 4 -->
+		<!-- <dependency> -->
+		<!-- <groupId>javax.ws.rs</groupId> -->
+		<!-- <artifactId>javax.ws.rs-api</artifactId> -->
+		<!-- <version>2.0</version> -->
+		<!-- <scope>provided</scope> -->
+		<!-- </dependency> -->
+		<!-- Use this dependency for tomcat 8 -->
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet</artifactId>
+			<version>2.5.1</version>
+		</dependency>
+		<!-- REST WEB-SERVICE -->
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -78,4 +94,5 @@
 		</plugins>
 	</build>
 
+	<packaging>war</packaging>
 </project>

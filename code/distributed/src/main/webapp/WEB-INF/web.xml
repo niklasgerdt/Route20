@@ -3,20 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
-	<context-param>
-		<param-name>debug</param-name>
-		<param-value>false</param-value>
-	</context-param>
-
-	<servlet>
-		<servlet-name>Service</servlet-name>
-		<servlet-class>route20.distributed.RoutingService</servlet-class>
-		<load-on-startup>1</load-on-startup>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>Service</servlet-name>
-		<url-pattern>/route/*</url-pattern>
-	</servlet-mapping>
+	<!-- empty web.xml, because maven build requires it, although jee7 works 
+		on annotations! -->
 
 </web-app>
