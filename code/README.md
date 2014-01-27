@@ -21,3 +21,14 @@ We use git: https://github.com/niklasgerdt/Route20.git
 
 ##Quality control
 SonarQube analysis tool is added to every Jenkins build. Url to quality reports: .
+
+
+NOTE!
+Environment setup scripts that you have appropriate libraries in library $HOME/dev. 
+Tools and versions:
+java 1.7.0_51
+maven 3.1.1
+tomcat 8
+jenkins xxx
+sonarqube 4.0
+eclipse 4.4 M4
