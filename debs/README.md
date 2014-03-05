@@ -18,8 +18,7 @@ Event-Based Systems
 - Topic based
 - Channel
 
-Recommended reading
--------------------
+####Recommended reading
 * Mühl, Gero, Ludger Fiege, and Peter Pietzuch. "Distributed event-based systems." (2006).
 * Pietzuch, Peter R. "Hermes: A scalable event-based middleware." University of Cambridge PhD thesis and TR590 (2004).
 * Etzion, Opher, and Peter Niblett. "Event processing in action." (2010).
