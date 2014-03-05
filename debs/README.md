@@ -1,58 +1,22 @@
-DEBS - Distributed Event-Based Systems
+Event-Based Systems
 -------------------------------
-Applications
-- scenarios
-- features
-
-Rationale for debs
-- Client/Server paradigm
+####Rationale
+- problems with client/server paradigm
 - loose coupling
 - scalability
 - adaptivity
 
-Building blocks
----------------
-Event
-* Header & Payload
-* Type (Object, Tuple, Structural record, Semi-structural record)
+####Building blocks
+- Event (Header, Type, Payload)
+- Producer
+- Consumer
+- Notification service
 
-Producer
-
-Consumer
-
-Notification service
-
-Routing
-* Filtering
-* Content based
-* Topic based
-* Channel
-
-Messaging Middleware
-- jms
-- Corba
-- Web Services
-- Rest
-
-Event-Based
-- Hermes
-- Rebeca
-- Glyphon
-- SIENA
-- Kinesis
-
-Distributed issues
-------------------
-- Temporal
-- Consensus
-- Paxos
-- Event order
-- Retrospective fixing
-- Buffering
-- Clocks
-- Eventual consistency
-- Routing
-- P2P
+####Routing options
+- Filtering
+- Content based
+- Topic based
+- Channel
 
 Recommended reading
 -------------------
