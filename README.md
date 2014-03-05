@@ -1,4 +1,4 @@
-![Route20](/route20logo.png)
+![Route20](/route20.png)
 ###Event-Based Routing System
 -----------------------------
 * Topic and type based routing
