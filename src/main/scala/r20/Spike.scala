@@ -5,6 +5,9 @@ object Spike extends Application {
   
   new MyEvent("id") -> "topic"
   
+val e = KurssiMuutos("nok", 15.0)
+println(e)
+
 }
 
 class MyEvent(e: String) extends Event with Sourced with Logged {
@@ -14,3 +17,5 @@ class MyEvent(e: String) extends Event with Sourced with Logged {
 object MySub extends Subscriber {
   override def @>(e: RouteEvent):Unit = println("@my sub")
 }
+
+case class KurssiMuutos(id: String, value: Double) extends Event with Logged
