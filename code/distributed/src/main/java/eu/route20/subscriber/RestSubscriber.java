@@ -1,4 +1,4 @@
-package eu.route20.examples.restsubscriber;
+package eu.route20.subscriber;
 
 import javax.ws.rs.*;
 

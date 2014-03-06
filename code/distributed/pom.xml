@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>Route20</groupId>
-	<artifactId>examples</artifactId>
+	<artifactId>distributed</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
@@ -22,11 +22,32 @@
 		<!-- </dependency> -->
 		<!-- Use this dependency for tomcat 8 -->
 		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>2.5.1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.glassfish.jersey.containers</groupId>
 			<artifactId>jersey-container-servlet</artifactId>
 			<version>2.5.1</version>
 		</dependency>
 		<!-- REST WEB-SERVICE -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet</artifactId>
+			<version>2.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet</artifactId>
+			<version>2.5.1</version>
+		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
