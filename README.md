@@ -13,5 +13,3 @@ Event-Based Routing System on JVM. Provides PubSub-model. Supports blocking and 
 - Consumer
 - Notification service
 
-####Recommended reading
-* Mühl, Gero, Ludger Fiege, and Peter Pietzuch. "Distributed event-based systems." (2006).
